@@ -1,5 +1,4 @@
 import java.util.*;
-import java.io.Console;
 
 // Separated classes for better structure and readability
 class Car {
@@ -30,9 +29,9 @@ class Car {
     public void returnCar() { isAvailable = true; }
     
     public double calculateRentalCost(int days) {
-        return rentalPricePerDay * days;
+        return rentalPricePerDay * days;// total cost is calculated using the fixed cost per day and number of days rented
     }
-    public void displayCarInfo() {
+     public void displayCarInfo() {
         System.out.println("Car Registration Number: " + carNo);
         System.out.println("Make: " + make);
         System.out.println("Model: " + model);
@@ -40,7 +39,7 @@ class Car {
         System.out.println("Rental Price Per Day: " + rentalPricePerDay);
         System.out.println("Available: " + (isAvailable ? "Yes" : "No"));
         System.out.println("---------------------");
-    }
+}
 }
 
 class Customer {
@@ -141,8 +140,7 @@ class LoginSystem {
     public boolean authenticate() {
         Scanner BSE = new Scanner(System.in);
 
-        int attempts = 3;
-        Console console = System.console();
+        int attempts = 3;//allows only 3 trials
 
         while (attempts > 0) {
 
@@ -150,7 +148,7 @@ class LoginSystem {
             String user = BSE.nextLine();
 
             System.out.print("Enter password: ");
-            String pass = console.readLine();
+            String pass = BSE.nextLine();
             if (user.equalsIgnoreCase(USERNAME) && pass.equals(PASSWORD)) {
                 System.out.println("Login successful!\n");
                 return true;
@@ -162,4 +160,5 @@ class LoginSystem {
         System.out.println("Account locked.");
         return false;
     }
+
 }
