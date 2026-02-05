@@ -2,6 +2,7 @@
 this application is used for managing cars,customers and rental transactions within a company, using a user authentication.
 
 ##overview
+
 This application allows
  1. customers to be added into the rental system
  2. allows cars to be added into the inventory
@@ -10,6 +11,7 @@ This application allows
 
 
     CLASSES INCLUDE
+    
       1.Car Class
    it is the vehicle to be rented from the available collection
    - Tracks availability of the vehicles in the inventory
@@ -41,6 +43,7 @@ This application allows
      The test data used include
 
  For cars:
+ 
   1. Subaru Cruiser (2016) - $1200/day for the rental cost a day
   2. Toyota Corolla (2018) - $1200/day for the rental cost a day
 
