@@ -9,7 +9,7 @@ This application allows
  3. calculates the total rental bill of a customer
  4. authenticates the customers- the program gives a user 3 tries to enter the user name and password
 
-
+    FEATURES
     CLASSES INCLUDE
     
       1.Car Class
